@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&family=Poppins:wght@700&family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 * {
   border: none;
@@ -7,7 +7,6 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  font-family: "Quicksand", Arial, Helvetica, sans-serif;
   color: #E4E4E4;
 }
 
@@ -21,6 +20,7 @@
 
 .header {
   background-color: #000;
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
   opacity: 90%;
   width: 100%;
   height: 93px;
@@ -29,6 +29,7 @@
   align-items: center;
   justify-content: space-between;
   position: fixed;
+  z-index: 10;
 }
 
 .menu ul {
@@ -56,28 +57,102 @@
 
 .banner {
   background: url(/assets/background-banner.png) no-repeat;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-}
-
-.banner-content {
-  display: flex;
+  background-size: cover;
   width: 100%;
+  height: 100%;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 .banner h1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-family: "Mrs Saint Delafield", Arial, Helvetica, sans-serif;
   font-size: 230px;
   line-height: 44px;
   font-weight: normal;
-  height: 100%;
   margin-top: 100px;
   color: #90908F;
+} 
+
+.about-me {
+  background-color: #020202;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.title {
+  font-size: 55px;
+  font-family: "Noto Serif KR", Arial, Helvetica, sans-serif;
+}
+
+.text {
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+  font-size: 23px;
+  line-height: 50px;
+  font-weight: lighter;
+  display: flex;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button button {
+  height: 78px;
+  width: 320px;
+  background-color: transparent;
+  border: 2px solid #9E9EA0;
+  font-size: 20px;
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+  cursor: pointer;
+}
+
+.button button:hover {
+  border: none;
+  background-color: #9E9EA0;
+  color: #020202;
+  font-weight: 500;
+}
+
+.background-word {
+  z-index: 9;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  padding-top: 100px;
+  overflow: hidden;
+}
+
+.background-word p {
+  font-size: 200px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: #191919;
+}
+
+.back-sobre {
+  text-align: right;
+  margin-right: -30px;
+}
+
+.back-mim {
+  text-align: left;
+  margin-left: -30px;
 }
