@@ -87,7 +87,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  z-index: 10;
 }
 
 .title {
@@ -155,4 +154,84 @@
 .back-mim {
   text-align: left;
   margin-left: -30px;
+}
+
+.portfolio {
+  background-color: #020202;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  overflow: hidden;
+}
+
+.portfolio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+input[type=radio] {
+  display: none;
+}
+
+.carousel-container {
+  width: 100%;
+  max-width: 928.125px;
+  max-height: 450px;
+  height: 100%;
+  transform-style: preserve-3d;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card {
+  position: absolute;
+  width: 60%;
+  height: 100%;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transition: transform .4s ease;
+  cursor: pointer;
+}
+
+.card p {
+  text-align: center;
+  font-size: 18px;
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+  padding: 10px 0;
+}
+
+.cards {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 20px;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#item-1:checked ~ .cards #project-3, #item-2:checked ~ .cards #project-1, #item-3:checked ~ .cards #project-2 {
+  transform: translatex(-40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #project-2, #item-2:checked ~ .cards #project-3, #item-3:checked ~ .cards #project-1 {
+  transform: translatex(40%) scale(.8);
+  opacity: .4;
+  z-index: 0;
+}
+
+#item-1:checked ~ .cards #project-1, #item-2:checked ~ .cards #project-2, #item-3:checked ~ .cards #project-3 {
+  transform: translatex(0) scale(1);
+  opacity: 1;
+  z-index: 1;
 }
