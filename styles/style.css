@@ -33,6 +33,21 @@
   z-index: 10;
 }
 
+.navbar {
+  display: flex;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu ul li {
+  width: 100%;
+}
+
 .menu ul {
   display: flex;
   flex-direction: row;
@@ -40,10 +55,22 @@
   justify-content: space-between;
   font-size: 20px;
   font-weight: normal;
+  width: 100%;
 }
 
 .menu ul li:hover {
   color: #a0a0a0;
+}
+
+.logo img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20%;
+}
+
+.logo img:hover {
+  opacity: .4;
 }
 
 .language {
