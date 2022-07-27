@@ -8,6 +8,7 @@
   list-style: none;
   text-decoration: none;
   color: #E4E4E4;
+  scroll-behavior: smooth;
 }
 
 .eua {
@@ -282,6 +283,8 @@
   background-color: #020202;
   width: 100%;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
   overflow: hidden;
 }
 
