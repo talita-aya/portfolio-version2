@@ -172,6 +172,71 @@
   justify-content: space-between;
 }
 
+.carousel-portfolio {
+  width: 1300px;
+  height: 360px;
+}
+
+.slides {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: flex-end;
+}
+
+.page {
+  width: 1280px;
+  height: 100%;
+  display: flex;
+  margin: 0;
+}
+
+#atual {
+  transition: all 1s;
+}
+
+.chevron {
+  padding: 0 40px;
+  cursor: pointer;
+}
+
+.arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.slide-portfolio {
+  width: 400px;
+  height: 360px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.slide-portfolio h1 {
+  font-family: "Quicksand", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 24px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.image-portfolio {
+  width: 400px;
+  height: 308.8px;
+  cursor: pointer;
+}
+
+.image-portfolio:hover {
+  opacity: .4;
+}
+
 .contact {
   background-color: #020202;
   width: 100%;
