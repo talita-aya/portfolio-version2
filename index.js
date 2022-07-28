@@ -46,3 +46,13 @@ function slide() {
   page.style.marginLeft = -1110 * atual + "px";
   document.getElementById(atual).classList.add("imgAtual");
 }
+
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}

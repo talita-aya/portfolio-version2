@@ -15,42 +15,47 @@
 
   <title>Talita Aya</title>
 
-  <link rel="stylesheet" href="styles/grid.css">
   <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
-  <header class="header container">
-    <div class="navbar grid-7">
-      <div class="logo">
-        <a class="logo" href="#banner">
-          <li><img src="assets/logo.png" alt="me"></li>
-        </a>
+  <header>
+    <div class="header">
+      <div class="header-container">
+        <div class="logo">
+          <a href="#banner"><img src="assets/logo.png" alt="logo"></a>
+        </div>
+
+        <div class="navbar">
+          <button class="btn-mobile" id="btn-mobile"></button>
+
+          <ul id="menu-list" class="menu-list">
+            <li><a href="#about-me">
+                <p>Sobre mim</p>
+              </a></li>
+            <li><a href="#portfolio">
+                <p>Portfólio</p>
+              </a></li>
+            <li><a href="#contact">
+                <p>Contato</p>
+              </a></li>
+          </ul>
+
+          <ul class="language">
+            <li>
+              <a href="#">
+                <img class="brasil" src="assets/brasil.svg" alt="brasil">
+              </a>
+            </li>
+            <li>
+              <a href="index-en.html">
+                <img class="eua" src="assets/eua.svg" alt="eua">
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
-      <div class="menu">
-        <ul>
-          <a href="#about-me">
-            <li>Sobre mim</li>
-          </a>
-          <a href="#portfolio">
-            <li>Portfólio</li>
-          </a>
-          <a href="#contact">
-            <li>Contato</li>
-          </a>
-        </ul>
-      </div>
-    </div>
-
-
-    <div class="language grid-9">
-      <a href="#">
-        <img class="brasil" src="assets/brasil.svg" alt="brasil">
-      </a>
-      <a href="index-en.html">
-        <img class="eua" src="assets/eua.svg" alt="eua">
-      </a>
     </div>
   </header>
 
@@ -61,14 +66,13 @@
   </section>
 
   <section id="about-me" class="about-me">
-    <div class="container about-me-container">
-      <div class="title grid-16">
+    <div class="about-me-container">
+      <div class="title">
         <p>Sobre mim</p>
       </div>
 
       <div class="text">
-        <div class="grid-2"></div>
-        <div class="grid-9">
+        <div>
           Olá!
           <br>
           Meu nome é Talita, sou estudante de Engenharia de Computação na
@@ -77,13 +81,12 @@
           <br>
           Seja muito bem-vindo (a) ao meu delírio pessoal :)
         </div>
-        <div class="grid-5"></div>
       </div>
 
-      <div class="button grid-16">
-        <a href="#contact">
-          <button>Entrar em contato</button>
-        </a>
+      <div class="button-container">
+        <button class="button">
+          <a href="#contact">Entrar em contato</a>
+        </button>
       </div>
     </div>
 
@@ -94,12 +97,12 @@
   </section>
 
   <section id="portfolio" class="portfolio">
-    <div class="container portfolio-container">
-      <div class="title grid-16">
+    <div class="portfolio-container">
+      <div class="title">
         <p>Portfolio</p>
       </div>
 
-      <div class="carousel-portfolio grid-16">
+      <div class="carousel-portfolio">
         <div class="slides">
           <div id="atual" class="page">
             <div class="slide-portfolio" id="description">
@@ -165,7 +168,7 @@
         </div>
       </div>
 
-      <div class="arrow grid-16">
+      <div class="arrow">
         <div id="back" class="chevron">
           <i><img src="/assets/arrow-left.svg" alt="arrow left"></i>
         </div>
@@ -179,14 +182,13 @@
   </section>
 
   <section id="contact" class="contact">
-    <div class="container contact-container">
-      <div class="title grid-16">
+    <div class="contact-container">
+      <div class="title">
         <p>Contato</p>
       </div>
 
       <div class="text">
-        <div class="grid-2"></div>
-        <div class="grid-9">
+        <div>
           Para maiores informações sobre minha vida acadêmica e
           profissional, meu linkedin está sempre atualizado!
           <br>
@@ -194,12 +196,10 @@
           <br>
           <span style="font-size: 16px;">juro que sou legal :)</span>
         </div>
-        <div class="grid-5"></div>
       </div>
 
       <div class="social-media">
-        <div class="grid-5"></div>
-        <div class="socials grid-6">
+        <div class="socials">
           <a target="_blank" href="https://www.instagram.com/talita.aya/">
             <img class="instagram" src="assets/instagram.svg" alt="instagram">
           </a>
@@ -216,7 +216,6 @@
             <img class="email" src="assets/email.svg" alt="email">
           </a>
         </div>
-        <div class="grid-5"></div>
       </div>
     </div>
 
@@ -227,7 +226,7 @@
   </section>
 
   <footer id="footer" class="footer">
-    <p class="container footer-content">Todos os direitos reservados ©</p>
+    <p class="footer-content">Todos os direitos reservados ©</p>
   </footer>
 
   <script src="index.js"></script>
