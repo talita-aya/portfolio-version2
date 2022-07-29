@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&family=Poppins:wght@700&family=Quicksand:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&family=Noto+Serif+KR:wght@200;300;400;500;600;700;900&family=Poppins:wght@700&family=Quicksand:wght@300;400;500;600;700&display=swap");
 
 * {
   border: none;
@@ -7,28 +7,8 @@
   box-sizing: border-box;
   list-style: none;
   text-decoration: none;
-  color: #E4E4E4;
+  color: #e4e4e4;
   scroll-behavior: smooth;
-}
-
-.eua {
-  opacity: 15%;
-}
-
-.eua:hover {
-  opacity: 100%;
-}
-
-.brasil.english {
-  opacity: 15%;
-}
-
-.eua.english {
-  opacity: 100%;
-}
-
-.brasil.english:hover {
-  opacity: 100%;
 }
 
 .header {
@@ -40,59 +20,77 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   position: fixed;
   z-index: 10;
 }
 
-.navbar {
-  display: flex;
-}
-
-.menu {
-  width: 100%;
+.header-container {
   display: flex;
   align-items: center;
-  justify-content: center;
+  width: 80%;
 }
 
-.menu ul li {
-  width: 100%;
-}
-
-.menu ul {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  font-size: 20px;
-  font-weight: normal;
-  width: 100%;
-}
-
-.menu ul li:hover {
-  color: #a0a0a0;
+.logo {
+  width: 10%;
 }
 
 .logo img {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 20%;
+  width: 60%;
 }
 
 .logo img:hover {
-  opacity: .4;
+  opacity: 0.4;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.btn-mobile {
+  display: none;
+}
+
+.menu-list {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.menu-list p:hover {
+  color: #b6b6b6;
 }
 
 .language {
   display: flex;
+  width: 10%;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: space-between;
 }
 
-.language img {
-  padding: 10px;
+.eua {
+  opacity: 25%;
+}
+
+.eua:hover {
+  opacity: 100%;
+}
+
+.brasil.english {
+  opacity: 25%;
+}
+
+.eua.english {
+  opacity: 100%;
+}
+
+.brasil.english:hover {
+  opacity: 100%;
 }
 
 .banner {
@@ -112,7 +110,7 @@
   line-height: 44px;
   font-weight: normal;
   margin-top: 100px;
-  color: #90908F;
+  color: #90908f;
 }
 
 .about-me {
@@ -120,6 +118,8 @@
   width: 100%;
   height: 100%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
 }
 
@@ -127,11 +127,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 80%;
+  height: 80%;
 }
 
 .title {
   font-size: 55px;
   font-family: "Noto Serif KR", Arial, Helvetica, sans-serif;
+  margin-top: 50px;
 }
 
 .text {
@@ -142,26 +145,26 @@
   display: flex;
 }
 
-.button {
+.button-container {
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 10;
 }
 
-.button button {
+.button {
   height: 78px;
   width: 320px;
   background-color: transparent;
-  border: 2px solid #9E9EA0;
+  border: 2px solid #9e9ea0;
   font-size: 20px;
   font-family: "Quicksand", Arial, Helvetica, sans-serif;
   cursor: pointer;
 }
 
-.button button:hover {
+.button:hover {
   border: none;
-  background-color: #9E9EA0;
+  background-color: #585858;
   color: #020202;
   font-weight: 500;
 }
@@ -202,18 +205,21 @@
   width: 100%;
   height: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
 
 .portfolio-container {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: space-between;
+  width: 80%;
+  height: 80%;
 }
 
 .carousel-portfolio {
-  width: 1300px;
+  width: 100%;
   height: 360px;
 }
 
@@ -274,7 +280,7 @@
 }
 
 .image-portfolio:hover {
-  opacity: .4;
+  opacity: 0.4;
 }
 
 .contact {
@@ -282,6 +288,8 @@
   width: 100%;
   height: 100%;
   display: flex;
+  align-items: center;
+  justify-content: center;
   overflow: hidden;
 }
 
@@ -289,11 +297,14 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  width: 80%;
+  height: 80%;
 }
 
 .social-media {
   z-index: 10;
   display: flex;
+  justify-content: center;
 }
 
 .socials {
@@ -301,6 +312,7 @@
   align-items: center;
   justify-content: space-between;
   z-index: 10;
+  width: 50%;
 }
 
 .linkedin,
@@ -323,12 +335,383 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   overflow: hidden;
 }
 
 .footer-content {
+  width: 80%;
   font-family: "Quicksand", Arial, Helvetica, sans-serif;
   font-size: 16px;
   padding: 30px 0;
+}
+
+@media only screen and (min-width: 1000px) and (max-width: 1200px) {
+  .menu-list {
+    width: 50%;
+  }
+
+  .language {
+    width: 15%;
+  }
+
+  .banner h1 {
+    font-size: 150px;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+
+  .button {
+    height: 73px;
+    font-size: 18px;
+  }
+
+  .background-word p {
+    font-size: 150px;
+  }
+
+  .carousel-portfolio {
+    height: 280px;
+  }
+
+  .page {
+    width: 960px;
+  }
+
+  .image-portfolio {
+    width: 300px;
+    height: 231.6px;
+  }
+
+  .socials {
+    width: 70%;
+  }
+
+  .instagram, .email {
+    height: 90%;
+  }
+
+  .linkedin,
+  .github {
+    height: 85%;
+  }
+
+  .footer-content {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 999px) {
+  .menu-list {
+    width: 55%;
+  }
+
+  .language {
+    width: 18%;
+  }
+
+  .banner {
+    background-position: center;
+  }
+
+  .banner h1 {
+    font-size: 130px;
+  }
+
+  .title {
+    font-size: 45px;
+  }
+
+  .text {
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+  .button {
+    width: 250px;
+    height: 70px;
+    font-size: 16px;
+  }
+
+  .background-word p {
+    font-size: 130px;
+  }
+
+  .carousel-portfolio {
+    height: 280px;
+  }
+
+  .page {
+    width: 810px;
+  }
+
+  .image-portfolio {
+    width: 250px;
+    height: 193px;
+  }
+
+  .socials {
+    width: 70%;
+  }
+
+  .instagram, .email {
+    height: 80%;
+  }
+
+  .linkedin,
+  .github {
+    height: 75%;
+  }
+
+  .footer-content {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 799px) {
+  .menu-list {
+    width: 70%;
+    font-size: 18px;
+  }
+
+  .logo {
+    width: 20%;
+  }
+
+  .logo img {
+    width: 100%;
+    padding-right: 20px;
+  }
+
+  .language {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .brasil, .eua {
+    width: 80%;
+  }
+
+  .banner {
+    background-position: center;
+  }
+
+  .banner h1 {
+    font-size: 120px;
+  }
+
+  .title {
+    font-size: 40px;
+    z-index: 10;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .button {
+    width: 230px;
+    height: 60px;
+    font-size: 16px;
+  }
+
+  .background-word {
+    overflow: auto;
+    word-wrap: break-word;
+  }
+
+  .background-word p {
+    font-size: 130px;
+    line-height: 120px;
+  }
+
+  .carousel-portfolio {
+    height: 280px;
+  }
+
+  .page {
+    width: 810px;
+  }
+
+  .image-portfolio {
+    width: 250px;
+    height: 193px;
+  }
+
+  .socials {
+    width: 70%;
+  }
+
+  .instagram, .email {
+    height: 80%;
+  }
+
+  .linkedin,
+  .github {
+    height: 75%;
+  }
+
+  .footer-content {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 599px) { 
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar {
+    width: 17%;
+  }
+
+  .menu-list {
+    display: none;
+  }
+
+  .menu-list.active {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 93px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-list p {
+    margin: 10px;
+    padding: 20px;
+    font-size: 22px;
+  }
+
+  .btn-mobile {
+    display: flex;
+    background: url(/assets/iconoir_menu-scale.svg) no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+
+  .btn-mobile.close {
+    display: flex;
+    background: url(/assets/clarity_close-line.svg) no-repeat;
+    background-size: cover;
+    width: 45px;
+    height: 50px;
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+
+  .logo {
+    width: 40%;
+  }
+
+  .language {
+    display: none;
+  }
+
+  .language.active {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    background-color: #000;
+    width: 100%;
+    left: 0;
+    align-items: flex-end;
+    justify-content: center;
+    top: 357px;
+  }
+
+  .brasil, .eua {
+    padding: 0 5px;
+  }
+
+  .banner {
+    background-position: center;
+  }
+
+  .banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .banner h1 {
+    font-size: 120px;
+    width: 50%;
+    line-height: 100px;
+  }
+
+  .title {
+    font-size: 45px;
+  }
+
+  .text {
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+  .button {
+    height: 75px;
+    width: 250px;
+    font-size: 18px;
+  }
+
+  .background-word p {
+    font-size: 130px;
+    line-height: 130px;
+    word-wrap: break-word;
+  }
+
+  .page {
+    display: flex;
+    align-items: center;
+    width: 1000px;
+  }
+
+  .slide-portfolio {
+    width: 250px;
+    height: 250px;
+  }
+
+  .image-portfolio {
+    width: 250px;
+    height: 193px;
+  }
+
+  .socials {
+    width: 100%;
+  }
+
+  .instagram, .email {
+    height: 80%;
+  }
+
+  .linkedin,
+  .github {
+    height: 75%;
+  }
+
+  .footer-content {
+    font-size: 12px;
+  }
 }

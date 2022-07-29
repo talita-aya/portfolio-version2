@@ -46,3 +46,19 @@ function slide() {
   page.style.marginLeft = -1110 * atual + "px";
   document.getElementById(atual).classList.add("imgAtual");
 }
+
+
+
+// responsividade menu mobile
+const menu = document.getElementById("btn-mobile")
+menu.addEventListener('click', toggleMenu)
+
+function toggleMenu() {
+  console.log('oi')
+  menu.classList.toggle('close')
+  const menuExpand = document.getElementById("menu-list")
+  const langExpand = document.getElementById("language")
+
+  menuExpand.classList.toggle('active')
+  langExpand.classList.toggle('active')
+}
