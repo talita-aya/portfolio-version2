@@ -135,6 +135,7 @@
   font-size: 55px;
   font-family: "Noto Serif KR", Arial, Helvetica, sans-serif;
   margin-top: 50px;
+  z-index: 10;
 }
 
 .text {
@@ -219,7 +220,7 @@
 }
 
 .carousel-portfolio {
-  width: 1300px;
+  width: 100%;
   height: 360px;
 }
 
@@ -407,32 +408,196 @@
   }
 }
 
-@media only screen and (min-width: 788px) and (max-width: 979px) {
-}
-
-@media only screen and (max-width: 787px) {
-  .header {
-    padding-top: 20px;
-    justify-content: space-between;
-  }
-
-  .logo {
-    margin-left: -100px;
-    width: 30%;
-  }
-
+@media only screen and (min-width: 800px) and (max-width: 999px) {
   .menu-list {
-    background-color: blue;
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    width: 100%;
-    left: 0;
-    top: 93px;
+    width: 55%;
   }
 
   .language {
+    width: 18%;
+  }
+
+  .banner {
+    background-position: center;
+  }
+
+  .banner h1 {
+    font-size: 130px;
+  }
+
+  .title {
+    font-size: 45px;
+  }
+
+  .text {
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+  .button {
+    width: 250px;
+    height: 70px;
+    font-size: 16px;
+  }
+
+  .background-word p {
+    font-size: 130px;
+  }
+
+  .carousel-portfolio {
+    height: 280px;
+  }
+
+  .page {
+    width: 810px;
+  }
+
+  .image-portfolio {
+    width: 250px;
+    height: 193px;
+  }
+
+  .socials {
+    width: 70%;
+  }
+
+  .instagram, .email {
+    height: 80%;
+  }
+
+  .linkedin,
+  .github {
+    height: 75%;
+  }
+
+  .footer-content {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 799px) {
+  .menu-list {
+    width: 70%;
+    font-size: 18px;
+  }
+
+  .logo {
+    width: 20%;
+  }
+
+  .logo img {
+    width: 100%;
+    padding-right: 20px;
+  }
+
+  .language {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .brasil, .eua {
+    width: 80%;
+  }
+
+  .banner {
+    background-position: center;
+  }
+
+  .banner h1 {
+    font-size: 120px;
+  }
+
+  .title {
+    font-size: 40px;
+    z-index: 10;
+  }
+
+  .text {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  .button {
+    width: 230px;
+    height: 60px;
+    font-size: 16px;
+  }
+
+  .background-word {
+    overflow: auto;
+    word-wrap: break-word;
+  }
+
+  .background-word p {
+    font-size: 130px;
+    line-height: 120px;
+  }
+
+  .carousel-portfolio {
+    height: 280px;
+  }
+
+  .page {
+    width: 810px;
+  }
+
+  .image-portfolio {
+    width: 250px;
+    height: 193px;
+  }
+
+  .socials {
+    width: 70%;
+  }
+
+  .instagram, .email {
+    height: 80%;
+  }
+
+  .linkedin,
+  .github {
+    height: 75%;
+  }
+
+  .footer-content {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (max-width: 599px) { 
+  .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .navbar {
+    width: 17%;
+  }
+
+  .menu-list {
     display: none;
+  }
+
+  .menu-list.active {
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 93px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .menu-list p {
+    margin: 10px;
+    padding: 20px;
+    font-size: 22px;
   }
 
   .btn-mobile {
@@ -446,11 +611,108 @@
     transition: 0.3s ease-in-out;
   }
 
-  .banner h1 {
-    font-size: 150px;
+  .btn-mobile.close {
     display: flex;
-    background-color: blue;
+    background: url(/assets/clarity_close-line.svg) no-repeat;
+    background-size: cover;
+    width: 45px;
+    height: 50px;
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+  }
+
+  .logo {
+    width: 40%;
+  }
+
+  .language {
+    display: none;
+  }
+
+  .language.active {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    background-color: #000;
+    width: 100%;
+    left: 0;
+    align-items: flex-end;
+    justify-content: center;
+    top: 357px;
+  }
+
+  .brasil, .eua {
+    padding: 0 5px;
+  }
+
+  .banner {
+    background-position: center;
+  }
+
+  .banner-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .banner h1 {
+    font-size: 120px;
     width: 50%;
-    line-height: 150px;
+    line-height: 100px;
+  }
+
+  .title {
+    font-size: 45px;
+  }
+
+  .text {
+    font-size: 18px;
+    line-height: 40px;
+  }
+
+  .button {
+    height: 75px;
+    width: 250px;
+    font-size: 18px;
+  }
+
+  .background-word p {
+    font-size: 130px;
+    line-height: 130px;
+    word-wrap: break-word;
+  }
+
+  .page {
+    display: flex;
+    align-items: center;
+    width: 1000px;
+  }
+
+  .slide-portfolio {
+    width: 250px;
+    height: 250px;
+  }
+
+  .image-portfolio {
+    width: 250px;
+    height: 193px;
+  }
+
+  .socials {
+    width: 100%;
+  }
+
+  .instagram, .email {
+    height: 80%;
+  }
+
+  .linkedin,
+  .github {
+    height: 75%;
+  }
+
+  .footer-content {
+    font-size: 12px;
   }
 }

@@ -48,11 +48,17 @@ function slide() {
 }
 
 
-function myFunction() {
-  var x = document.getElementById("myTopnav");
-  if (x.className === "topnav") {
-    x.className += " responsive";
-  } else {
-    x.className = "topnav";
-  }
+
+// responsividade menu mobile
+const menu = document.getElementById("btn-mobile")
+menu.addEventListener('click', toggleMenu)
+
+function toggleMenu() {
+  console.log('oi')
+  menu.classList.toggle('close')
+  const menuExpand = document.getElementById("menu-list")
+  const langExpand = document.getElementById("language")
+
+  menuExpand.classList.toggle('active')
+  langExpand.classList.toggle('active')
 }
