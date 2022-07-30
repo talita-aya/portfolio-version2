@@ -102,82 +102,52 @@
         <p>Portfolio</p>
       </div>
 
-      <div class="carousel-portfolio">
-        <div class="slides">
-          <div id="atual" class="page">
-            <div class="slide-portfolio" id="description">
-              <div>
-                <a target="_blank" href="https://github.com/talita-aya/new-portfolio.git">
-                  <img class="image-portfolio" src="assets/portfolio/new-portfolio.png" alt="portfolio">
-                </a>
-              </div>
-              <h1>Design & Programming</h1>
-            </div>
-
-            <div class="slide-portfolio">
-              <div>
-                <a target="_blank" href="https://www.figma.com/file/VCBraJHnHK03UZlzdhhOnp/uikyo?node-id=0%3A1">
-                  <img class="image-portfolio" src="assets/portfolio/uikyo.png" alt="uikyo">
-                </a>
-              </div>
-              <h1>Design</h1>
-            </div>
-
-            <div class="slide-portfolio">
-              <div>
-                <a target="_blank" href="https://github.com/talita-aya/lemon-pie.git">
-                  <img class="image-portfolio" src="assets/portfolio/lemon-pie.png" alt="lemon pie">
-                </a>
-              </div>
-              <h1>Design & Programming</h1>
-            </div>
-          </div>
-
-          <div class="page">
-            <div class="slide-portfolio">
-              <div>
-                <a target="_blank" href="https://www.figma.com/file/jaJ5z7E5s1PhdcbgKIVrSB/weather-app?node-id=0%3A1">
-                  <img class="image-portfolio" src="assets/portfolio/wheater-app.png" alt="wheater-app">
-                </a>
-              </div>
-              <h1>Design</h1>
-            </div>
-
-            <div class="slide-portfolio">
-              <div>
-                <a target="_blank" href="https://github.com/talita-aya/portfolio.git">
-                  <img class="image-portfolio" src="assets/portfolio/old-portfolio.png" alt="portfolio">
-                </a>
-              </div>
-              <h1>Design & Programming</h1>
-            </div>
-
-            <div class="slide-portfolio">
-              <div>
-                <a target="_blank" href="https://github.com/talita-aya/uTask.git">
-                  <img class="image-portfolio" src="assets/portfolio/utask.png" alt="utask">
-                </a>
-              </div>
-              <h1>Programming</h1>
-            </div>
-          </div>
-
-          <!--Contador de slides-->
-          <div class="balls">
-          </div>
+      <div id="carousel-container">
+        <div>
+          <ul id="carousel" class="animate">
+            <li class="slide animate">
+              <a target="_blank" href="https://github.com/talita-aya/new-portfolio.git">
+                <img src="assets/portfolio/new-portfolio.png" alt="new-portfolio">
+              </a>
+              <p>Design & Programming</p>
+            </li>
+            <li class="slide animate">
+              <a target="_blank" href="https://www.figma.com/file/VCBraJHnHK03UZlzdhhOnp/uikyo?node-id=0%3A1">
+                <img src="assets/portfolio/uikyo.png" alt="uikyo">
+              </a>
+              <p>Design</p>
+            </li>
+            <li class="slide animate">
+              <a target="_blank" href="https://github.com/talita-aya/portfolio.git">
+                <img src="assets/portfolio/old-portfolio.png" alt="old-portfolio">
+              </a>
+              <p>Design & Programming</p>
+            </li>
+            <li class="slide animate">
+              <a target="_blank" href="https://github.com/talita-aya/lemon-pie.git">
+                <img src="assets/portfolio/lemon-pie.png" alt="lemon-pie">
+              </a>
+              <p>Design & Programming</p>
+            </li>
+            <li class="slide animate">
+              <a target="_blank" href="https://www.figma.com/file/jaJ5z7E5s1PhdcbgKIVrSB/weather-app?node-id=0%3A1">
+                <img src="assets/portfolio/wheater-app.png" alt="wheater-app">
+              </a>
+              <p>Design</p>
+            </li>
+            <li class="slide animate">
+              <a target="_blank" href="https://github.com/talita-aya/uTask.git">
+                <img src="assets/portfolio/utask.png" alt="utask">
+              </a>
+              <p>Programming</p>
+            </li>
+          </ul>
+        </div>
+        <div id="controls">
+          <span id="prev"><img src="assets/arrow-left.svg"></span>
+          <span id="next"><img src="assets/arrow-right.svg"></span>
         </div>
       </div>
-
-      <div class="arrow">
-        <div id="back" class="chevron">
-          <i><img src="/assets/arrow-left.svg" alt="arrow left"></i>
-        </div>
-        <div id="next" class="chevron">
-          <i><img src="/assets/arrow-right.svg" alt="arrow right"></i>
-        </div>
-      </div>
-
-
     </div>
   </section>
 
@@ -189,7 +159,7 @@
 
       <div class="text">
         <div>
-          For more information about my academic and professional 
+          For more information about my academic and professional
           life, my linkedin is always updated!
           <br>
           Feel free to call me and chat too...
