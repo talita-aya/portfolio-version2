@@ -594,7 +594,7 @@
 
   .btn-mobile {
     display: flex;
-    background: url(/assets/iconoir_menu-scale.svg) no-repeat;
+    background: url(./assets/iconoir_menu-scale.svg) no-repeat;
     background-size: cover;
     width: 50px;
     height: 50px;
@@ -605,7 +605,7 @@
 
   .btn-mobile.close {
     display: flex;
-    background: url(/assets/clarity_close-line.svg) no-repeat;
+    background: url(./assets/clarity_close-line.svg) no-repeat;
     background-size: cover;
     width: 45px;
     height: 50px;
